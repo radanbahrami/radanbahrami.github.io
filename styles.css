@@ -180,6 +180,7 @@ body {
   height: 28px; 
   display: block;
   fill: var(--primary);
+  transition: fill .3s ease;
 }
 
 .hero-icon:hover svg {
