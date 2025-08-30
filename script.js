@@ -79,4 +79,14 @@
   window.addEventListener('resize', resize, { passive: true });
   resize();
   draw();
+
+  // Handle LinkedIn badge loading
+  const badge = d.querySelector('.badge-base');
+  if (badge) {
+    setTimeout(() => {
+      if (!badge.querySelector('iframe, img')) {
+        badge.style.display = 'none';
+      }
+    }, 5000); // Wait 5 seconds for the script to load and render the badge
+  }
 })();
