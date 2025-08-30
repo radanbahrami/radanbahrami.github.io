@@ -191,6 +191,7 @@ body {
 .grid-2 { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; align-items: start; }
 .about-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)); border: 1px solid var(--line); padding: 1rem; width: fit-content; display: flex; flex-direction: column; align-items: center; }
 .about-card img { width: 100%; display: block; border: 1px solid var(--line); }
+.location { display: flex; justify-content: space-between; width: 300px; margin: 1rem auto auto 0.8rem; }
 .badge-base { margin: 0 auto; }
 .quick { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
 .quick li { display: flex; justify-content: space-between; color: var(--muted); border-bottom: 1px dashed var(--line); padding: .4rem 0; }
