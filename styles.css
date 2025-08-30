@@ -66,6 +66,24 @@ body {
   opacity: 0.9;
 }
 
+.status-badge {
+  margin-bottom: 1rem;
+}
+
+.status-label {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid #00ff88;
+  background: rgba(0, 255, 136, 0.15);
+  color: #00ff88;
+  box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.1);
+}
+
 .section .section-title {
   font-size: clamp(1.25rem, 0.8rem + 1.6vw, 1.75rem);
   letter-spacing: 0.08em;
