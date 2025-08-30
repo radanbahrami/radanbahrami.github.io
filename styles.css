@@ -175,9 +175,15 @@ body {
   margin: 0;
   transition: transform .2s ease;
 }
-.hero-icon svg { width: 22px; height: 22px; display: block; filter: drop-shadow(0 0 10px rgba(0,170,255,.18)); }
-.hero-icon:hover { 
-  transform: translateY(-2px);
+.hero-icon svg { 
+  width: 28px; 
+  height: 28px; 
+  display: block;
+  fill: var(--primary);
+}
+
+.hero-icon:hover svg {
+  fill: white;
 }
 
 /* About */
