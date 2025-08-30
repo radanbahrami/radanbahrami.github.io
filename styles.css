@@ -258,6 +258,15 @@ img[alt="Coffeez Screenshot"] {
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 1rem 0; color: var(--dim); background: linear-gradient(to top, rgba(255,255,255,0.02), transparent); }
 
+.footer-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 /* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(8px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }
