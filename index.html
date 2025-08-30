@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radan Bahrami</title>
+    <meta name="description" content="Software Developer" />
+    <link rel="icon" type="image/png" href="./assets/whitelogoclean.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Ambient background starfield -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Home">
+          <img class="brand-mark" src="./assets/whitelogoclean.png" alt="Logo" />
+          <span class="brand-text"></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-outline" href="#" aria-label="Download Resume">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="section hero" aria-label="Hero">
+        <div class="container">
+          <h1 class="headline reveal">Radan Bahrami</h1>
+          <h2 class="headline reveal">Backend Django Developer</h2>
+          <p class="subhead reveal">
+            I am a Django Backend Developer with a passion for creating robust, scalable, and useful web applications.
+          </p>
+          <div class="cta reveal">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <span class="hero-socials-inline">
+              <a class="hero-icon" href="https://github.com/radanbahrami" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg role="img" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <defs>
+                    <linearGradient id="grad-github" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="var(--text)" />
+                      <stop offset="100%" stop-color="var(--primary)" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#grad-github)" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.403 1.02.005 2.047.137 3.006.403 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.241 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.922.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a class="hero-icon" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg role="img" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <title>LinkedIn</title>
+                  <defs>
+                    <linearGradient id="grad-linkedin" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="var(--text)" />
+                      <stop offset="100%" stop-color="var(--primary)" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#grad-linkedin)" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.268 2.37 4.268 5.455v6.288zM5.337 7.433a2.07 2.07 0 1 1 0-4.139 2.07 2.07 0 0 1 0 4.139zM6.667 20.452H3.999V9h2.668v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-label="About">
+        <div class="container grid-2">
+          <div class="col reveal">
+            <h2 class="section-title">About</h2>
+            <p>
+              As a Software Developer and Computer Science student at Islamic Azad University Central Tehran Branch, I'm passionate about turning ideas into clean, scalable, and impactful software. I love writing code that people rely on, and that I’m proud of, whether it's solving a specific problem or powering a useful product used every day.
+              <br><br>
+              I’m most experienced in Python and Django, and comfortable with HTML, CSS, Git, and Linux. I also have a growing knowledge in JavaScript.<br><br>
+              I enjoy picking up new technologies fast and writing maintainable, testable code that performs well under real-world conditions.
+              <br><br>
+              What drives me is a desire to make the world a better, more efficient place through thoughtful software.
+            </p>
+          </div>
+          <div class="col reveal">
+            <div class="about-card">
+              <img
+                alt="Portrait placeholder"
+                src="./assets/pfpclean.jpeg"
+              />
+              <ul class="quick">
+                <li><span>Location</span><strong>Tehran, Iran</strong></li>
+                <li><span>Role</span><strong>Backend Django Developer (Open to Work)</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section" aria-label="Skills">
+        <div class="container">
+          <h2 class="section-title reveal">Main Skills</h2>
+          <ul class="chip-list reveal">
+            <li>DJANGO<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>PYTHON<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>GIT<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>TESTING<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>LINUX<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>SQL<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>HTML / CSS<span class="skill-label experienced">EXPERIENCED</span></li>
+            <li>JAVASCRIPT<span class="skill-label familiar">FAMILIAR</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section" aria-label="Experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title reveal">Experience</h2>
+            <p class="section-kicker reveal">A selection of work. Replace images, titles, and links.</p>
+          </div>
+          <div class="experience-grid">
+            <!-- Experience Card -->
+            <article class="card reveal">
+              <div class="card-media" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <a href="https://coffeez.xyz" class="card-media" aria-label="Visit Coffeez.xyz">
+                  <img src="./assets/coffeezscreenshotclean.png" alt="Coffeez Screenshot">
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Founder & Full-Stack Developer</h3>
+                <h3 class="card-title">Coffeez • Self-employed</h3>
+                <p class="card-text">A platform for creators to receive cryptocurrency donations through virtual "coffee" purchases.</p>
+                <ul class="card-tags">
+                  <li>Django</li>
+                  <li>HTML / CSS</li>
+                  <li>JavaScript</li>
+                  <li>MySQL</li>
+                  <li>Crypto Integration</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="btn btn-outline" href="https://coffeez.xyz" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="btn btn-ghost" href="https://github.com/radanbahrami/coffeez" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <a href="https://typersian.site" class="card-media" aria-label="Visit Typersian.site">
+                  <img src="./assets/typersianlogoclean.png" alt="Typersian Logo">
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Founder & Developer</h3>
+                <h3 class="card-title">Typersian • Self-employed</h3>
+                <p class="card-text">World’s first system-wide app to convert Finglish (Persian in Latin script) to Persian script across devices.</p>
+                <ul class="card-tags">
+                  <li>Python</li>
+                  <li>PyQt</li>
+                  <li>Linux System App</li>
+                  <li>Windows System App</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="btn btn-outline" href="https://typersian.site" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="btn btn-ghost" href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <a href="https://typersian.site" class="card-media" aria-label="Visit Typersian.site">
+                  <img src="./assets/typersianscreenshotclean.png" alt="Typersian Screenshot">
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Developer</h3>
+                <h3 class="card-title">Typersian Website • Self-employed</h3>
+                <p class="card-text">A website for the Typersian app.</p>
+                <ul class="card-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>GitHub Pages</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="btn btn-outline" href="https://typersian.site" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a class="btn btn-ghost" href="https://github.com/radanbahrami/typersian-site" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+          <h2 class="section-title reveal">Contact</h2>
+          <p class="reveal">Want to collaborate or have a role in mind? Reach out.</p>
+          <div class="contact-actions reveal">
+            <a class="btn btn-primary" href="mailto:radanbhr@gmail.com">radanbhr@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p style="margin-bottom: -1rem;">© <span id="year"></span> Radan Bahrami</p>
+        <p>Radan Bahrami and the Radan Bahrami logos are trademarks of Radan Bahrami. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
