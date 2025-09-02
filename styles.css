@@ -168,26 +168,29 @@ body {
   gap: .6rem;
   align-items: center;
 }
-.hero-icon { 
-  display: inline-block;
+.hero-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  color: var(--primary);
+  transition: all 0.3s ease;
   text-decoration: none;
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-  transition: transform .2s ease;
 }
-.hero-icon svg { 
-  width: 28px; 
-  height: 28px; 
+.hero-icon:hover {
+  background: var(--primary-weak);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.hero-icon svg {
+  width: 24px;
+  height: 24px;
   display: block;
-  fill: var(--primary);
-  transition: fill .3s ease;
-}
-
-.hero-icon:hover svg {
-  fill: white;
+  fill: currentColor;
 }
 
 /* About */
