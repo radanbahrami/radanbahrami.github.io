@@ -150,8 +150,17 @@ body {
 .primary-nav a { color: var(--muted); text-decoration: none; font-size: .9rem; }
 .primary-nav a:hover { color: var(--accent); }
 
-.resume-buttons { display: none; align-items: center; gap: 0.8rem; }
+.resume-buttons { display: flex; align-items: center; gap: 0.5rem; }
 .resume-buttons .btn { font-size: 0.7rem; padding: 0 0.5rem; height: 36px; }
+
+/* PC screens only - larger resume buttons */
+@media (min-width: 861px) {
+  .resume-buttons .btn { 
+    font-size: 0.9rem; 
+    padding: 0 1rem; 
+    height: 48px; 
+  }
+}
 
 /* Hero */
 .hero { padding: 8rem 0 5rem; position: relative; }
@@ -383,7 +392,7 @@ img[alt="Coffeez Screenshot"] {
 
 @media (max-width: 860px) {
   .primary-nav { display: none; }
-  .resume-buttons { display: flex; }
+  .resume-buttons { display: flex; gap: .8rem; }
 }
 
 @media (max-width: 480px) {
