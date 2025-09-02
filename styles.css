@@ -149,6 +149,9 @@ body {
 .primary-nav a { color: var(--muted); text-decoration: none; font-size: .9rem; }
 .primary-nav a:hover { color: var(--accent); }
 
+.resume-buttons { display: none; align-items: center; gap: 0.8rem; }
+.resume-buttons .btn { font-size: 0.7rem; padding: 0 0.5rem; height: 36px; }
+
 /* Hero */
 .hero { padding: 8rem 0 5rem; position: relative; }
 .hero .cta { display: flex; gap: .75rem; margin-top: 1.25rem; align-items: center; }
@@ -306,9 +309,8 @@ img[alt="Coffeez Screenshot"] {
 }
 
 @media (max-width: 860px) {
-  .primary-nav { position: fixed; inset: 64px 0 0 0; background: rgba(11,13,16,0.98); display: grid; align-content: start; gap: 1rem; padding: 1rem; transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; border-top: 1px solid var(--line); }
-  .primary-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .nav-toggle { display: inline-block; }
+  .primary-nav { display: none; }
+  .resume-buttons { display: flex; }
 }
 
 @supports (font-variation-settings: normal) {

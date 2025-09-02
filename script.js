@@ -6,17 +6,6 @@
   const y = d.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
-  // Mobile nav
-  const toggle = d.querySelector('.nav-toggle');
-  const nav = d.getElementById('primary-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('open');
-    });
-  }
-
   // Smooth scroll for internal links
   d.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
