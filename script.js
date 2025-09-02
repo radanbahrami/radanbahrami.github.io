@@ -75,6 +75,11 @@
     setTimeout(() => {
       if (!badge.querySelector('iframe, img')) {
         badge.style.display = 'none';
+        // Remove top margin from location when badge is hidden
+        const location = badge.nextElementSibling;
+        if (location && location.classList.contains('location')) {
+          location.style.marginTop = '0';
+        }
       }
     }, 5000); // Wait 5 seconds for the script to load and render the badge
   }
