@@ -280,10 +280,78 @@ img[alt="Coffeez Screenshot"] {
 .timeline-item .meta { color: var(--dim); font-size: .85rem; }
 
 /* Contact */
-.contact-actions { display: flex; align-items: center; gap: 1rem; margin-top: .5rem; }
-.socials { display: inline-flex; gap: .8rem; }
-.socials a { color: var(--muted); text-decoration: none; }
-.socials a:hover { color: var(--accent); }
+.contact-section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2.5rem;
+  max-width: 640px;
+  margin-left: 0;
+}
+
+.contact-header {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.contact-description {
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--muted);
+  max-width: 560px;
+}
+
+.contact-actions { 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem; 
+  margin-top: 1.5rem; 
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-email svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-socials { 
+  display: flex; 
+  justify-content: flex-start;
+  gap: 1.2rem; 
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary-weak);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 1rem 0; color: var(--dim); background: linear-gradient(to top, rgba(255,255,255,0.02), transparent); }
