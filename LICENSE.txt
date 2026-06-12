@@ -1,4 +1,4 @@
-Copyright (c) 2025 Radan Bahrami, All rights reserved.
+Copyright (c) 2026 Radan Bahrami, All rights reserved.
 
 This software and associated documentation files (the "Software") are the exclusive property of the copyright holder.
 

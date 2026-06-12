@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Radan Bahrami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="icon" href="assets/whitelogoclean.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    /* Page-specific styles; shared vars/nav/footer are in /assets/styles.css */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: calc(var(--nav-h) + 80px) 24px 120px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--gray-400);
+      text-decoration: none;
+      margin-bottom: 56px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--black); }
+
+    .page-eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: clamp(36px, 6vw, 60px);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--black);
+      margin-bottom: 48px;
+      line-height: 1.05;
+    }
+
+    .page-body {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--gray-600);
+      line-height: 1.8;
+    }
+
+    .signature {
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+    }
+
+    footer {
+      border-top: 1px solid var(--gray-200);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy { font-size: 13px; color: var(--gray-400); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 13px; color: var(--gray-400); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--black); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <i data-lucide="code" width="28" height="28"></i>
+      <span style="display:none;font-size:16px;font-weight:600;letter-spacing:-0.03em;">RB</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/about.html" class="grow-link active">About</a></li>
+      <li><a href="/blog.html" class="grow-link">Blog</a></li>
+      <li><a href="/#contact" class="grow-link">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-box" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay" id="mobileNav">
+    <button class="nav-mobile-close" onclick="closeMenu()" aria-label="Close menu">
+      <i data-lucide="x" width="26" height="26"></i>
+    </button>
+    <a class="grow-link" href="/about.html" onclick="closeMenu()">About</a>
+    <a class="grow-link" href="/blog.html" onclick="closeMenu()">Blog</a>
+    <a class="grow-link" href="/#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <div class="page-wrap">
+    <a class="back-link" href="/">
+      <i data-lucide="arrow-left" width="14" height="14"></i>
+      Back
+    </a>
+    <p class="page-eyebrow">About me</p>
+    <h1 class="page-title">Get to know me</h1>
+    <div class="page-body">
+      <p>I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for.</p>
+
+      <p>I got into software because it felt like magic. The idea that you can think of something, and make it real. That feeling hasn't gone away.</p>
+
+      <p>I'm a freelance software developer with over 14 months of experience. I build custom software and AI integrations, the kind of tools that don't exist yet.</p>
+
+      <p>Typersian started with my own frustration. I grew up more comfortable typing in Latin script than Persian, which made writing in Persian slower and more painful than it needed to be. No existing tool solved it the way I needed: system-wide, across every app, in real time. So I built it myself. It became the world's first system-wide Finglish to Persian converter: <a class="grow-link text-link" href="https://typersian.site" target="_blank" rel="noopener">Typersian</a>.</p>
+
+      <p>Most recently I built an AI-powered WhatsApp and Telegram bot for an Irish client — automating bookings, enquiries, and operations through natural language. A real client, a real problem, a real solution.</p>
+
+      <p>If you have a problem that existing software can't solve, <a class="grow-link text-link" href="/#contact">let's talk</a>.</p>
+
+      <p class="signature">Radan Bahrami</p>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script></p>
+    <div class="footer-links">
+      <a class="grow-link" href="/about.html">About</a>
+      <a class="grow-link" href="/blog.html">Blog</a>
+      <a class="grow-link" href="/#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    function setMenuState(isOpen) {
+      const menu = document.getElementById('mobileNav');
+      const hamburger = document.getElementById('navHamburger');
+      menu.classList.toggle('open', isOpen);
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+    function toggleMenu() { setMenuState(!document.getElementById('mobileNav').classList.contains('open')); }
+    function closeMenu() { setMenuState(false); }
+  </script>
+</body>
+</html>
