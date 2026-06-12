@@ -73,7 +73,6 @@
       display: block;
       transform: scale(1.07);
       transform-origin: center 22%;
-      will-change: transform;
     }
 
     .hero-cta-button {
@@ -843,6 +842,14 @@
     function closeMenu() {
       setMenuState(false);
     }
+
+    (function () {
+      var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      if (!isSafari) {
+        var el = document.querySelector('.hero-headshot');
+        if (el) el.style.willChange = 'transform';
+      }
+    })();
   </script>
 </body>
 </html>
