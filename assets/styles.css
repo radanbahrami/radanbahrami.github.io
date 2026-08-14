@@ -298,6 +298,17 @@ nav.solid .nav-links a.active {
   max-width: 0;
 }
 
+.btn.copied.un-copying {
+  gap: 8px;
+  transition: background-color var(--ease), color var(--ease), border-color var(--ease), gap 0.58s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn.copied.un-copying .copy-label {
+  opacity: 1;
+  max-width: 8em;
+  transition: opacity 0.36s ease, max-width 0.58s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 .copy-swap {
   position: relative;
   display: inline-flex;
@@ -326,6 +337,16 @@ nav.solid .nav-links a.active {
   opacity: 0;
 }
 
+.btn.copied.un-copying .copy-swap-idle {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.72s;
+}
+
+.btn.copied.un-copying .copy-swap-done {
+  opacity: 0;
+  transition: opacity 0.16s ease 0.54s;
+}
+
 .copy-swap-done svg path {
   stroke-dasharray: var(--check-len, 24);
   stroke-dashoffset: var(--check-len, 24);
@@ -335,6 +356,10 @@ nav.solid .nav-links a.active {
   animation: draw-check 0.45s 0.26s ease-out forwards;
 }
 
+.btn.copied.un-copying .copy-swap-done svg path {
+  animation: undraw-check 0.7s ease-in forwards;
+}
+
 .copy-swap svg {
   width: 16px;
   height: 16px;
@@ -342,7 +367,13 @@ nav.solid .nav-links a.active {
 }
 
 @keyframes draw-check {
+  from { stroke-dashoffset: var(--check-len, 24); }
   to { stroke-dashoffset: 0; }
+}
+
+@keyframes undraw-check {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: var(--check-len, 24); }
 }
 
 /* PANELS & PAGE CHROME */

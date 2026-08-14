@@ -10,14 +10,18 @@
   function copyEmail(email, button) {
     var done = function () {
       if (!button) return;
-      button.classList.remove('copied');
+      button.classList.remove('copied', 'un-copying');
       void button.offsetWidth;
       button.classList.add('copied');
       button.setAttribute('aria-label', 'Email copied');
       clearTimeout(button._copyReset);
+      clearTimeout(button._copyIdle);
       button._copyReset = setTimeout(function () {
-        button.classList.remove('copied');
+        button.classList.add('un-copying');
         button.setAttribute('aria-label', 'Copy email');
+        button._copyIdle = setTimeout(function () {
+          button.classList.remove('copied', 'un-copying');
+        }, 980);
       }, 1800);
     };
 
