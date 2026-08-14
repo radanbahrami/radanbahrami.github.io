@@ -4,98 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Radan Bahrami</title>
+  <meta name="description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta property="og:title" content="About | Radan Bahrami" />
+  <meta property="og:description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://radanbahrami.com/about.html" />
+  <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
+  <meta property="og:image:alt" content="Radan Bahrami" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About | Radan Bahrami" />
+  <meta name="twitter:description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <link rel="icon" href="assets/whitelogoclean.png" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
-    /* Page-specific styles; shared vars/nav/footer are in /assets/styles.css */
     .page-wrap {
       max-width: 720px;
       margin: 0 auto;
-      padding: calc(var(--nav-h) + 80px) 24px 120px;
+      padding: calc(var(--nav-h) + 96px) 24px 120px;
     }
 
     .back-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 13px;
-      color: var(--gray-400);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
       text-decoration: none;
       margin-bottom: 56px;
-      transition: color 0.2s;
+      transition: color 0.33s;
     }
-    .back-link:hover { color: var(--black); }
+    .back-link:hover { color: var(--ink); }
 
-    .page-eyebrow {
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gray-400);
-      margin-bottom: 16px;
+    .page-wrap .page-title {
+      text-align: left;
+      margin-bottom: 40px;
     }
 
-    .page-title {
-      font-size: clamp(36px, 6vw, 60px);
-      font-weight: 600;
-      letter-spacing: -0.04em;
-      color: var(--black);
-      margin-bottom: 48px;
-      line-height: 1.05;
+    .page-wrap .page-eyebrow {
+      text-align: left;
     }
 
     .page-body {
-      font-size: 18px;
-      font-weight: 300;
-      color: var(--gray-600);
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--muted);
       line-height: 1.8;
+    }
+
+    .page-body p { margin-bottom: 20px; }
+
+    .page-body strong {
+      color: var(--ink);
+      font-weight: 500;
     }
 
     .signature {
       font-family: 'Dancing Script', cursive;
       font-size: 48px;
+      color: var(--ink);
+      margin-top: 16px;
     }
 
-    footer {
-      border-top: 1px solid var(--gray-200);
-      padding: 32px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+    .page-wrap .email-choice {
+      margin: 8px 0 32px;
     }
-    .footer-copy { font-size: 13px; color: var(--gray-400); }
-    .footer-links { display: flex; gap: 24px; }
-    .footer-links a { font-size: 13px; color: var(--gray-400); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--black); }
 
-    @media (max-width: 768px) {
-      nav { padding: 0 20px; }
-      .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
-      footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+    .back-link:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
+      border-radius: 4px;
     }
   </style>
 </head>
-<body>
+<body class="page-inner">
 
   <nav>
-    <a class="nav-logo" href="/">
-      <i data-lucide="code" width="28" height="28"></i>
-      <span style="display:none;font-size:16px;font-weight:600;letter-spacing:-0.03em;">RB</span>
+    <a class="nav-logo" href="/" aria-label="Radan Bahrami home">
+      <span class="wordmark">Radan Bahrami</span>
     </a>
     <ul class="nav-links">
-      <li><a href="/about.html" class="grow-link active">About</a></li>
-      <li><a href="/blog.html" class="grow-link">Blog</a></li>
-      <li><a href="/#contact" class="grow-link">Contact</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/about.html" class="active">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
     </ul>
-    <button class="nav-hamburger" id="navHamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span class="hamburger-box" aria-hidden="true">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -104,13 +104,11 @@
     </button>
   </nav>
 
-  <div class="nav-mobile-overlay" id="mobileNav">
-    <button class="nav-mobile-close" onclick="closeMenu()" aria-label="Close menu">
-      <i data-lucide="x" width="26" height="26"></i>
-    </button>
-    <a class="grow-link" href="/about.html" onclick="closeMenu()">About</a>
-    <a class="grow-link" href="/blog.html" onclick="closeMenu()">Blog</a>
-    <a class="grow-link" href="/#contact" onclick="closeMenu()">Contact</a>
+  <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/work.html">Work</a>
+    <a href="/research.html">Research</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
   </div>
 
   <div class="page-wrap">
@@ -119,19 +117,35 @@
       Back
     </a>
     <p class="page-eyebrow">About me</p>
-    <h1 class="page-title">Get to know me</h1>
+    <h1 class="page-title">AI Engineer & Researcher</h1>
     <div class="page-body">
       <p>I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for.</p>
 
-      <p>I got into software because it felt like magic. The idea that you can think of something, and make it real. That feeling hasn't gone away.</p>
+      <p>I got into software because it felt like magic. The idea that you can think of something and make it real. That feeling hasn't gone away.</p>
 
-      <p>I'm a freelance Software Engineer with over 2 years of experience. I build custom software and AI integrations, the kind of tools that don't exist yet.</p>
+      <p><strong>I build AI systems for ecommerce companies.</strong> I'm a freelance AI Engineer with 2+ years of experience building production systems. I specialize in conversational AI, intelligent automation, and custom backend integrations: the kind of tools that don't exist yet but solve real business problems.</p>
 
-      <p>Typersian started with my own frustration. I grew up more comfortable typing in Latin script than Persian, which made writing in Persian slower and more painful than it needed to be. No existing tool solved it the way I needed: system-wide, across every app, in real time. So I built it myself. It became the world's first system-wide Finglish to Persian converter: <a class="grow-link text-link" href="https://typersian.site" target="_blank" rel="noopener">Typersian</a>.</p>
+      <p>Most recently I built a multi-tenant AI platform for Irish hospitality businesses: WhatsApp and Telegram bots handling bookings, customer support, staff management, and operations through natural language. ~30k lines of Python, hybrid NLP + LLM pipelines, GDPR-compliant data handling. A real client, a real problem, a real solution.</p>
 
-      <p>Most recently I built an AI-powered WhatsApp and Telegram bot for an Irish client — automating bookings, enquiries, and operations through natural language. A real client, a real problem, a real solution.</p>
+      <p><strong>I'm interested in NLP and LLM research.</strong> My production experience with language models and conversational AI sparked deeper curiosity about how these systems work. I'm looking to collaborate with professors and PhD students on research projects where I can contribute my engineering skills and learn from the academic side.</p>
 
-      <p>If you have a problem that existing software can't solve, <a class="grow-link text-link" href="/#contact">let's talk</a>.</p>
+      <p><a class="grow-link text-link" href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener">Typersian</a> started with my own frustration. I grew up more comfortable typing in Latin script than Persian, which made writing in Persian slower and more painful than it needed to be. No existing tool solved it the way I needed: system-wide, across every app, in real time. So I built it myself. It became the world's first system-wide Finglish to Persian converter, used by many people.</p>
+
+      <p>Whether you need AI systems built or want to collaborate on research, let's talk.</p>
+
+      <div class="email-choice align-start">
+        <span class="email-address">radan@radanbahrami.com</span>
+        <div class="btn-row">
+          <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
+          <span class="copy-swap" aria-hidden="true">
+            <span class="copy-swap-idle"><i data-lucide="copy" width="16" height="16"></i></span>
+            <span class="copy-swap-done"><i data-lucide="check" width="16" height="16"></i></span>
+          </span>
+          <span class="copy-label">Copy email</span>
+        </button>
+          <a class="btn btn-primary" href="mailto:radan@radanbahrami.com">Open mail</a>
+        </div>
+      </div>
 
       <p class="signature">Radan Bahrami</p>
     </div>
@@ -140,25 +154,13 @@
   <footer>
     <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script></p>
     <div class="footer-links">
-      <a class="grow-link" href="/about.html">About</a>
-      <a class="grow-link" href="/blog.html">Blog</a>
-      <a class="grow-link" href="/#contact">Contact</a>
+      <a href="/work.html">Work</a>
+      <a href="/research.html">Research</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </footer>
 
-  <script>
-    lucide.createIcons();
-    function setMenuState(isOpen) {
-      const menu = document.getElementById('mobileNav');
-      const hamburger = document.getElementById('navHamburger');
-      menu.classList.toggle('open', isOpen);
-      hamburger.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
-      hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    }
-    function toggleMenu() { setMenuState(!document.getElementById('mobileNav').classList.contains('open')); }
-    function closeMenu() { setMenuState(false); }
-  </script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

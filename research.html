@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Radan Bahrami</title>
+  <meta name="description" content="CS student seeking NLP and LLM research collaborations, with production experience in conversational AI and multilingual systems." />
+  <meta property="og:title" content="Research | Radan Bahrami" />
+  <meta property="og:description" content="CS student seeking NLP and LLM research collaborations, with production experience in conversational AI and multilingual systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://radanbahrami.com/research.html" />
+  <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
+  <meta property="og:image:alt" content="Radan Bahrami" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Research | Radan Bahrami" />
+  <meta name="twitter:description" content="CS student seeking NLP and LLM research collaborations, with production experience in conversational AI and multilingual systems." />
+  <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="icon" href="assets/whitelogoclean.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .content-section {
+      padding: 80px 40px;
+      background: var(--surface);
+    }
+
+    .content-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .interest-card {
+      background: transparent;
+      padding: 0;
+    }
+
+    .interest-icon {
+      width: 22px;
+      height: 22px;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    .interest-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .interest-desc {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .interest-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .topic-tag {
+      padding: 4px 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .bring-section {
+      padding: 80px 40px;
+      background: var(--white);
+    }
+
+    .bring-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .bring-grid {
+      display: grid;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .bring-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 24px;
+      padding: 0;
+    }
+
+    .bring-number {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      padding-top: 4px;
+    }
+
+    .bring-content h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .bring-content p {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .looking-section {
+      padding: 80px 40px;
+      background: var(--surface);
+    }
+
+    .looking-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .looking-box {
+      background: transparent;
+      padding: 0;
+      margin-top: 24px;
+    }
+
+    .looking-box h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .looking-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 28px;
+    }
+
+    .looking-list li {
+      font-size: 15px;
+      color: var(--muted);
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .looking-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--ink);
+    }
+
+    .looking-note {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .background-section {
+      padding: 80px 40px;
+      background: var(--white);
+    }
+
+    .background-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .background-content {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-top: 24px;
+    }
+
+    .background-content p { margin-bottom: 20px; }
+
+    .background-content strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      .content-section,
+      .bring-section,
+      .looking-section,
+      .background-section { padding: 64px 20px; }
+
+      .interests-grid { grid-template-columns: 1fr; }
+
+      .bring-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body class="page-inner">
+
+  <nav>
+    <a class="nav-logo" href="/" aria-label="Radan Bahrami home">
+      <span class="wordmark">Radan Bahrami</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/work.html">Work</a></li>
+      <li><a class="active" href="/research.html">Research</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-box" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/work.html">Work</a>
+    <a href="/research.html">Research</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <div class="page-header">
+    <p class="page-eyebrow">For Researchers</p>
+    <h1 class="page-title">NLP & LLM Research</h1>
+    <p class="page-subtitle">
+      I'm a computer science student interested in collaborating on research in natural language processing and large language models. I bring production experience and strong software engineering skills.
+    </p>
+  </div>
+
+  <section class="content-section" id="interests">
+    <div class="content-inner">
+      <p class="section-label">Areas of Interest</p>
+      <h2 class="section-title">Research Interests</h2>
+
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i data-lucide="messages-square" width="22" height="22"></i>
+          </div>
+          <h3 class="interest-title">Natural Language Processing</h3>
+          <p class="interest-desc">
+            Exploring how machines understand and generate human language, with focus on practical applications and real-world deployment challenges.
+          </p>
+          <div class="interest-topics">
+            <span class="topic-tag">Intent Classification</span>
+            <span class="topic-tag">Named Entity Recognition</span>
+            <span class="topic-tag">Conversational AI</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i data-lucide="brain-circuit" width="22" height="22"></i>
+          </div>
+          <h3 class="interest-title">Large Language Models</h3>
+          <p class="interest-desc">
+            Interested in LLM behavior, prompting strategies, hybrid architectures, and bridging the gap between research and production systems.
+          </p>
+          <div class="interest-topics">
+            <span class="topic-tag">Prompt Engineering</span>
+            <span class="topic-tag">Hybrid Systems</span>
+            <span class="topic-tag">Production LLMs</span>
+          </div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i data-lucide="globe" width="22" height="22"></i>
+          </div>
+          <h3 class="interest-title">Multilingual NLP</h3>
+          <p class="interest-desc">
+            Personal experience building Typersian (Finglish → Persian) sparked interest in multilingual systems, transliteration, and low-resource languages.
+          </p>
+          <div class="interest-topics">
+            <span class="topic-tag">Transliteration</span>
+            <span class="topic-tag">Low-Resource Languages</span>
+            <span class="topic-tag">Cross-Lingual Transfer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bring-section" id="what-i-bring">
+    <div class="bring-inner">
+      <p class="section-label">My Background</p>
+      <h2 class="section-title">What I Bring to Research</h2>
+
+      <div class="bring-grid">
+        <div class="bring-item">
+          <div class="bring-number">01</div>
+          <div class="bring-content">
+            <h3>Production LLM Experience</h3>
+            <p>2+ years building real-world AI systems. I've deployed hybrid NLP pipelines with 30+ intents, integrated OpenAI fallback systems, and handled production-scale conversational AI.</p>
+          </div>
+        </div>
+
+        <div class="bring-item">
+          <div class="bring-number">02</div>
+          <div class="bring-content">
+            <h3>Strong Engineering Foundation</h3>
+            <p>Solid software engineering skills: Python, system design, database architecture, API development. I can implement research ideas and build the infrastructure to test them at scale.</p>
+          </div>
+        </div>
+
+        <div class="bring-item">
+          <div class="bring-number">03</div>
+          <div class="bring-content">
+            <h3>Independent Work Ethic</h3>
+            <p>2+ years as a freelancer taught me to work with remote teams. I communicate proactively and deliver results.</p>
+          </div>
+        </div>
+
+        <div class="bring-item">
+          <div class="bring-number">04</div>
+          <div class="bring-content">
+            <h3>Real-World Problem Perspective</h3>
+            <p>Experience with actual business problems helps me think about practical applications, deployment constraints, and what actually matters in production systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="looking-section" id="collaboration">
+    <div class="looking-inner">
+      <p class="section-label">Collaboration</p>
+      <h2 class="section-title">What I'm Looking For</h2>
+
+      <div class="looking-box">
+        <h3>Research Collaboration Opportunities</h3>
+        <ul class="looking-list">
+          <li>Research projects with professors or PhD students in NLP/LLM domains</li>
+          <li>Opportunities to contribute to papers as a research assistant or collaborator</li>
+          <li>Projects where I can leverage my implementation skills and production experience</li>
+          <li>Work on practical problems with potential for publication</li>
+        </ul>
+        <p class="looking-note">
+          I'm early in my research journey with no prior publications. I'm looking for opportunities to learn, contribute meaningfully, and build a research track record.
+        </p>
+        <div class="email-choice align-start">
+          <span class="email-address">radan@radanbahrami.com</span>
+          <div class="btn-row">
+            <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
+          <span class="copy-swap" aria-hidden="true">
+            <span class="copy-swap-idle"><i data-lucide="copy" width="16" height="16"></i></span>
+            <span class="copy-swap-done"><i data-lucide="check" width="16" height="16"></i></span>
+          </span>
+          <span class="copy-label">Copy email</span>
+        </button>
+            <a class="btn btn-primary" href="mailto:radan@radanbahrami.com">Open mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="background-section">
+    <div class="background-inner">
+      <p class="section-label">Academic Background</p>
+      <h2 class="section-title">Education & Experience</h2>
+
+      <div class="background-content">
+        <p>
+          <strong>B.Sc. Computer Science</strong> (in progress) at Islamic Azad University, Central Tehran Branch (GPA: 17.8/20). Previously studied mechanical engineering for 1.5 years before switching to follow my passion for software and AI.
+        </p>
+
+        <div class="highlight-box">
+          <p>
+            <strong>Why the switch?</strong> I realized I was built for software, not mechanical engineering. The ability to think of something and make it real through code felt like magic. That feeling hasn't gone away.
+          </p>
+        </div>
+
+        <p>
+          While I don't have prior research publications, I bring <strong>2+ years of real-world AI engineering</strong>. I've built production systems that use NLP and LLMs to solve actual business problems: conversational booking agents, multilingual chat interfaces, and intelligent automation.
+        </p>
+
+        <p>
+          My work on <strong><a href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener">Typersian</a></strong> (system-wide Finglish → Persian converter) gave me hands-on experience with multilingual NLP challenges, transliteration, and building developer tools used by real poeple.
+     
+        </p>
+
+        <p>
+          I'm most interested in research that bridges theory and practice: projects where software engineering skills are valuable, and where the work has potential for real-world impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2 class="cta-title">Let's collaborate on research</h2>
+    <p class="cta-desc">
+      I'd love to hear from you. Let's talk about what we could explore together.
+    </p>
+    <div class="email-choice">
+      <span class="email-address">radan@radanbahrami.com</span>
+      <div class="btn-row">
+        <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
+          <span class="copy-swap" aria-hidden="true">
+            <span class="copy-swap-idle"><i data-lucide="copy" width="16" height="16"></i></span>
+            <span class="copy-swap-done"><i data-lucide="check" width="16" height="16"></i></span>
+          </span>
+          <span class="copy-label">Copy email</span>
+        </button>
+        <a class="btn btn-primary" href="mailto:radan@radanbahrami.com">Open mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Radan Bahrami</p>
+    <div class="footer-links">
+      <a href="/work.html">Work</a>
+      <a href="/research.html">Research</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Radan Bahrami</title>
+  <meta name="description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta property="og:title" content="Work | Radan Bahrami" />
+  <meta property="og:description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://radanbahrami.com/work.html" />
+  <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
+  <meta property="og:image:alt" content="Radan Bahrami" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Work | Radan Bahrami" />
+  <meta name="twitter:description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="icon" href="assets/whitelogoclean.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .services-section {
+      padding: 80px 40px;
+      background: var(--white);
+    }
+
+    .services-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px 48px;
+      margin-top: 48px;
+    }
+
+    .service-card {
+      background: transparent;
+      padding: 0;
+    }
+
+    .service-icon {
+      width: 22px;
+      height: 22px;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    .service-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .service-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      font-size: 14px;
+      color: var(--muted);
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .service-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--ink);
+    }
+
+    .work-section {
+      padding: 80px 40px;
+      background: var(--surface);
+    }
+
+    .work-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .work-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      margin-top: 48px;
+    }
+
+    .work-card {
+      background: transparent;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card-media {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--white);
+      border-radius: 12px;
+    }
+
+    .card-titlebar {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .titlebar-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .titlebar-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--line);
+    }
+
+    .titlebar-url {
+      flex: 1;
+      height: 22px;
+      background: var(--surface);
+      border-radius: 4px;
+      max-width: 180px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 5px;
+    }
+
+    .titlebar-url svg { flex-shrink: 0; color: var(--muted); }
+
+    .titlebar-url-text {
+      font-size: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-screenshot {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 4 / 3;
+    }
+
+    .card-screenshot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .card-screenshot-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 220px;
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .card-body {
+      padding: 8px 0 8px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .card-num {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1;
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .card-outcome {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    .card-notice {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card-notice svg { flex-shrink: 0; }
+
+    .card-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 4px;
+    }
+
+    .work-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .work-row .work-card {
+      grid-template-columns: 1fr;
+    }
+
+    .work-row .work-card .card-body {
+      padding: 24px 0 0;
+    }
+
+    .work-row .work-card .card-screenshot {
+      aspect-ratio: 1 / 1;
+    }
+
+    @media (max-width: 768px) {
+      .services-section,
+      .work-section { padding: 64px 20px; }
+
+      .work-card,
+      .work-row { grid-template-columns: 1fr; }
+
+      .work-card .card-body {
+        padding: 24px 0 0;
+      }
+
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-inner">
+
+  <nav>
+    <a class="nav-logo" href="/" aria-label="Radan Bahrami home">
+      <span class="wordmark">Radan Bahrami</span>
+    </a>
+    <ul class="nav-links">
+      <li><a class="active" href="/work.html">Work</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-box" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/work.html">Work</a>
+    <a href="/research.html">Research</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <div class="page-header">
+    <p class="page-eyebrow">For Businesses</p>
+    <h1 class="page-title">AI Systems for Ecommerce</h1>
+    <p class="page-subtitle">
+      I build production-ready AI systems that solve real ecommerce problems: intelligent booking agents, automated customer support, price monitoring, and custom backend integrations.
+    </p>
+  </div>
+
+  <section class="work-section">
+    <div class="work-inner">
+      <p class="section-label">Case Studies</p>
+      <p class="section-title">Recent Projects</p>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <div class="card-media">
+            <div class="card-titlebar">
+              <div class="titlebar-dots">
+                <div class="titlebar-dot"></div>
+                <div class="titlebar-dot"></div>
+                <div class="titlebar-dot"></div>
+              </div>
+              <div class="titlebar-url">
+                <i data-lucide="lock" width="10" height="10"></i>
+                <span class="titlebar-url-text">Multi-Tenant Hospitality Platform</span>
+              </div>
+            </div>
+            <div class="card-screenshot">
+              <img src="assets/hospitalityuiscreenshotclean.png" alt="Hospitality platform admin interface" width="1449" height="1077" loading="lazy" decoding="async"
+                onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Platform Screenshot</span></div>'" />
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-num">01</span>
+            <span class="card-tag"><i data-lucide="briefcase" width="12" height="12"></i> Client Project — Ireland</span>
+            <h2 class="card-title">Multi-Tenant Hospitality Operations Platform</h2>
+            <p class="card-desc">Built a comprehensive platform (~30k LOC) handling WhatsApp/Telegram AI, bookings, staff management, and pricing intelligence across multiple locations. Includes hybrid NLP engine with 30+ intents, automated reservation lifecycle, and GDPR-compliant data handling.</p>
+            <p class="card-outcome">Bookings, support, and day-to-day ops go through WhatsApp and Telegram instead of phone tag, across multiple locations.</p>
+            <p class="card-notice"><i data-lucide="info" width="13" height="13"></i> Confidential client project. Screenshots for presentation only.</p>
+          </div>
+        </div>
+
+        <div class="work-row">
+
+          <div class="work-card">
+            <div class="card-media">
+              <div class="card-titlebar">
+                <div class="titlebar-dots">
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                </div>
+                <div class="titlebar-url">
+                  <i data-lucide="lock" width="10" height="10"></i>
+                  <span class="titlebar-url-text">Invoice Intelligence</span>
+                </div>
+              </div>
+              <div class="card-screenshot">
+                <img src="assets/invoicescreenshotclean.png" alt="Invoice monitoring dashboard" width="1145" height="1080" loading="lazy" decoding="async"
+                  onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Invoice System</span></div>'" />
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-num">02</span>
+              <span class="card-tag"><i data-lucide="briefcase" width="12" height="12"></i> Client Project — Ireland</span>
+              <h2 class="card-title">Automated Invoice Monitoring</h2>
+              <p class="card-desc">IMAP-based email ingestion, multi-stage PDF extraction, cross-supplier product normalization, and price history tracking. Threshold-based alerts for unit price changes.</p>
+              <p class="card-outcome">Supplier price changes show up as alerts, without anyone opening PDFs by hand.</p>
+              <p class="card-notice"><i data-lucide="info" width="13" height="13"></i> Confidential client project. Screenshots for presentation only.</p>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="card-media">
+              <div class="card-titlebar">
+                <div class="titlebar-dots">
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                </div>
+                <div class="titlebar-url">
+                  <i data-lucide="globe" width="10" height="10"></i>
+                  <span class="titlebar-url-text">Typersian</span>
+                </div>
+              </div>
+              <div class="card-screenshot" style="background-color: #2d2d2d;">
+                <img src="assets/typersianlogoclean.png" alt="Typersian" width="569" height="569" loading="lazy" decoding="async"
+                  onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Typersian</span></div>'" />
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-num">03</span>
+              <span class="card-tag"><i data-lucide="code" width="12" height="12"></i> Open Source</span>
+              <h2 class="card-title">Typersian</h2>
+              <p class="card-desc">System-wide Finglish to Persian converter using OS-level keyboard hooking and AI-powered word selection. First of its kind for Persian input.</p>
+              <p class="card-outcome">Type Persian in Finglish, system-wide, in every app, in real time.</p>
+                <a class="card-link github" href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="services-inner">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Services & Expertise</h2>
+
+      <div class="services-grid">
+        <div class="service-card" id="conversational-ai">
+          <div class="service-icon">
+            <i data-lucide="message-square" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">Conversational AI</h3>
+          <p class="service-desc">Build intelligent chatbots and voice agents for customer service, bookings, and support.</p>
+          <ul class="service-list">
+            <li>WhatsApp & Telegram business bots</li>
+            <li>Natural language booking systems</li>
+            <li>Hybrid rule-based + LLM pipelines</li>
+            <li>Multi-intent conversation handling</li>
+          </ul>
+        </div>
+
+        <div class="service-card" id="intelligent-automation">
+          <div class="service-icon">
+            <i data-lucide="brain" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">Intelligent Automation</h3>
+          <p class="service-desc">Automate repetitive tasks with AI-powered data extraction and processing.</p>
+          <ul class="service-list">
+            <li>Invoice & document processing</li>
+            <li>Email parsing and automation</li>
+            <li>Price monitoring & alerts</li>
+            <li>Inventory intelligence</li>
+          </ul>
+        </div>
+
+        <div class="service-card" id="backend-integration">
+          <div class="service-icon">
+            <i data-lucide="database" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">Backend & Integration</h3>
+          <p class="service-desc">Design and implement scalable backend systems and API integrations.</p>
+          <ul class="service-list">
+            <li>Multi-tenant SaaS platforms</li>
+            <li>RESTful API development</li>
+            <li>Database architecture & optimization</li>
+            <li>Third-party integrations (Stripe, Twilio, etc.)</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-lucide="shopping-cart" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">Ecommerce Solutions</h3>
+          <p class="service-desc">Custom tools tailored specifically for online retail and ecommerce operations.</p>
+          <ul class="service-list">
+            <li>Customer support automation</li>
+            <li>Order management systems</li>
+            <li>Recommendation engines</li>
+            <li>Analytics & reporting dashboards</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-lucide="code-2" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">Tech Stack</h3>
+          <p class="service-desc">Modern, proven technologies for reliable production systems.</p>
+          <ul class="service-list">
+            <li>Python (Flask, Django)</li>
+            <li>OpenAI GPT-4, Claude</li>
+            <li>MySQL, PostgreSQL</li>
+            <li>React for admin dashboards</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-lucide="rocket" width="22" height="22"></i>
+          </div>
+          <h3 class="service-title">End-to-End Delivery</h3>
+          <p class="service-desc">From architecture to deployment, I own the entire development lifecycle.</p>
+          <ul class="service-list">
+            <li>System design & architecture</li>
+            <li>Development & testing</li>
+            <li>Deployment & CI/CD</li>
+            <li>Documentation & support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2 class="cta-title">Let's build something</h2>
+    <p class="cta-desc">
+      Need a custom AI system? Let's talk about your project.
+    </p>
+    <div class="email-choice">
+      <span class="email-address">radan@radanbahrami.com</span>
+      <div class="btn-row">
+        <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
+          <span class="copy-swap" aria-hidden="true">
+            <span class="copy-swap-idle"><i data-lucide="copy" width="16" height="16"></i></span>
+            <span class="copy-swap-done"><i data-lucide="check" width="16" height="16"></i></span>
+          </span>
+          <span class="copy-label">Copy email</span>
+        </button>
+        <a class="btn btn-primary" href="mailto:radan@radanbahrami.com">Open mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Radan Bahrami</p>
+    <div class="footer-links">
+      <a href="/work.html">Work</a>
+      <a href="/research.html">Research</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
