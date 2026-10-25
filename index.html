@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Engineer & Researcher | Radan Bahrami</title>
-  <meta name="description" content="I build custom AI systems for ecommerce companies and collaborate on NLP and LLM research." />
-  <meta property="og:title" content="AI Engineer & Researcher | Radan Bahrami" />
-  <meta property="og:description" content="I build custom AI systems for ecommerce companies and collaborate on NLP and LLM research." />
+  <title>Radan Bahrami</title>
+  <meta name="description" content="I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for." />
+  <meta property="og:title" content="Radan Bahrami" />
+  <meta property="og:description" content="I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://radanbahrami.com/" />
   <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <meta property="og:image:alt" content="Radan Bahrami" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AI Engineer & Researcher | Radan Bahrami" />
-  <meta name="twitter:description" content="I build custom AI systems for ecommerce companies and collaborate on NLP and LLM research." />
+  <meta name="twitter:title" content="Radan Bahrami" />
+  <meta name="twitter:description" content="I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for." />
   <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/whitelogoclean.png" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
@@ -29,7 +28,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: calc(var(--nav-h) + 40px) 24px 80px;
+      padding: calc(var(--nav-h) + 40px) 24px 96px;
       background: var(--ink);
       color: var(--white);
       position: relative;
@@ -92,12 +91,12 @@
     }
 
     .hero-sub {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 400;
       color: rgba(255,255,255,0.7);
-      max-width: 560px;
-      line-height: 1.6;
-      margin-bottom: 36px;
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 0;
     }
 
     .hero-scroll {
@@ -124,104 +123,23 @@
       box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
     }
 
-    .hero-about {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 20px;
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.55);
-      text-decoration: none;
-      border-radius: 4px;
-      transition: color var(--ease);
-    }
-
-    .hero-about:hover { color: var(--white); }
-
-    .hero-about:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
-    }
-
-    a.feature-item {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      padding: 16px;
-      margin: -16px;
-      border-radius: 4px;
-      transition: background-color var(--ease);
-    }
-
-    a.feature-item:hover { background: rgba(0,0,0,0.04); }
-
-    a.feature-item:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 48px;
-      margin: 48px 0 48px;
-      text-align: left;
-    }
-
-    .feature-item h3 {
-      font-size: 16px;
-      font-weight: 500;
-      color: var(--ink);
-      margin-bottom: 10px;
-    }
-
-    .feature-item p {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .feature-item i {
-      color: var(--ink);
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    #work-section {
-      background: var(--white);
-    }
-
-    #research-section {
-      background: var(--surface);
-    }
-
     @media (max-width: 768px) {
-      .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        text-align: center;
-      }
-
-      .feature-item i { margin-left: auto; margin-right: auto; }
-
+      .hero { padding-bottom: 112px; }
       .hero-sub { max-width: 100%; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav id="siteNav">
     <a class="nav-logo" href="/" aria-label="Radan Bahrami home">
       <span class="wordmark">Radan Bahrami</span>
     </a>
     <ul class="nav-links">
+      <li><a href="/blog.html">Writing</a></li>
       <li><a href="/work.html">Work</a></li>
-      <li><a href="/research.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="/contact.html">Contact</a></li>
     </ul>
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span class="hamburger-box" aria-hidden="true">
@@ -232,12 +150,11 @@
     </button>
   </nav>
 
-  <!-- MOBILE NAV OVERLAY -->
   <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/blog.html">Writing</a>
     <a href="/work.html">Work</a>
-    <a href="/research.html">Research</a>
     <a href="/about.html">About</a>
-    <a href="#contact">Contact</a>
+    <a href="/contact.html">Contact</a>
     <div class="socials" style="margin-top:12px;">
       <a href="https://github.com/radanbahrami" target="_blank" rel="noopener" class="social-link">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -250,110 +167,155 @@
     </div>
   </div>
 
-  <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-headshot-wrap">
       <img class="hero-headshot" src="assets/headshotclean.png" alt="Radan Bahrami" width="140" height="140" onerror="this.parentElement.style.display='none'" />
     </div>
-    <div class="hero-eyebrow">AI Engineer & Researcher</div>
+    <div class="hero-eyebrow">AI Engineer</div>
     <h1>I'm Radan Bahrami</h1>
     <p class="hero-sub">
-      I build custom AI systems for ecommerce companies and collaborate on NLP & LLM research.
+      I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for. I got into software because it felt like magic. The idea that you can think of something and make it real. That feeling hasn't gone away.
     </p>
-    <div class="btn-row">
-      <a href="/work.html" class="btn btn-primary">For Businesses</a>
-      <a href="/research.html" class="btn btn-secondary">For Researchers</a>
-    </div>
-    <a href="/about.html" class="hero-about">
-      Just looking? About me
-      <i data-lucide="arrow-right" width="14" height="14"></i>
-    </a>
-    <a href="#work-section" class="hero-scroll" aria-label="Scroll to next section">
+    <a href="#writing" class="hero-scroll" aria-label="Scroll to next section">
       <i data-lucide="chevron-down" width="18" height="18"></i>
     </a>
   </section>
 
-  <!-- WORK SECTION -->
-  <section class="panel" id="work-section">
-    <div class="panel-inner">
-      <p class="section-label">For Businesses</p>
-      <h2 class="section-title">Custom AI Systems for Ecommerce</h2>
-      <p class="panel-body">
-        I build production-ready AI systems that solve real ecommerce problems: conversational booking agents, automated customer support, intelligent inventory monitoring, and custom integrations that connect your tools.
-      </p>
-
-      <div class="feature-grid">
-        <a class="feature-item" href="/work.html#conversational-ai">
-          <i data-lucide="message-square" width="22" height="22"></i>
-          <h3>Conversational AI</h3>
-          <p>WhatsApp/Telegram bots, booking automation, customer support agents using hybrid NLP + LLM pipelines.</p>
-        </a>
-        <a class="feature-item" href="/work.html#intelligent-automation">
-          <i data-lucide="brain" width="22" height="22"></i>
-          <h3>Smart Automation</h3>
-          <p>Intelligent data extraction, invoice processing, price monitoring, and workflow automation.</p>
-        </a>
-        <a class="feature-item" href="/work.html#backend-integration">
-          <i data-lucide="code" width="22" height="22"></i>
-          <h3>Custom Integrations</h3>
-          <p>Backend systems, API integrations, database design, multi-tenant SaaS platforms.</p>
-        </a>
+  <section class="writing-section" id="writing">
+    <div class="writing-inner">
+      <h2 class="section-title">Writing</h2>
+      <p class="writing-intro">Thoughts on AI, automation, and building things.</p>
+      <div class="blog-list" data-writing-list data-writing-limit="5" hidden></div>
+      <div class="blog-empty" data-writing-empty>
+        <div class="blog-empty-icon">
+          <i data-lucide="pencil-line" width="28" height="28"></i>
+        </div>
+        <h3>Nothing here yet.</h3>
+        <p>I'll be sharing thoughts on AI, building software, and lessons from freelancing. Check back soon.</p>
       </div>
-
-      <a href="/work.html" class="btn btn-primary">View My Work</a>
     </div>
   </section>
 
-  <!-- RESEARCH SECTION -->
-  <section class="panel" id="research-section">
-    <div class="panel-inner">
-      <p class="section-label">For Researchers</p>
-      <h2 class="section-title">NLP & LLM Research</h2>
-      <p class="panel-body">
-        I'm a CS student interested in natural language processing and large language models. I bring hands-on production experience with LLMs, NLP pipelines, and real-world AI deployment to research collaborations.
-      </p>
+  <section class="work-section" id="work">
+    <div class="work-inner">
+      <p class="section-label">Case Studies</p>
+      <h2 class="section-title">Recent Projects</h2>
 
-      <div class="feature-grid">
-        <a class="feature-item" href="/research.html#interests">
-          <i data-lucide="book-open" width="22" height="22"></i>
-          <h3>Research Interests</h3>
-          <p>NLP, LLMs, conversational AI, multilingual models, practical AI applications.</p>
-        </a>
-        <a class="feature-item" href="/research.html#what-i-bring">
-          <i data-lucide="flask-conical" width="22" height="22"></i>
-          <h3>What I Bring</h3>
-          <p>Production LLM experience, software engineering skills, independent work ethic, implementation focus.</p>
-        </a>
-        <a class="feature-item" href="/research.html#collaboration">
-          <i data-lucide="users" width="22" height="22"></i>
-          <h3>Looking For</h3>
-          <p>Research collaborations with professors and PhD students on NLP/LLM projects.</p>
-        </a>
+      <div class="work-grid">
+
+        <div class="work-card">
+          <div class="card-media">
+            <div class="card-titlebar">
+              <div class="titlebar-dots">
+                <div class="titlebar-dot"></div>
+                <div class="titlebar-dot"></div>
+                <div class="titlebar-dot"></div>
+              </div>
+              <div class="titlebar-url">
+                <i data-lucide="lock" width="10" height="10"></i>
+                <span class="titlebar-url-text">Multi-Tenant Hospitality Platform</span>
+              </div>
+            </div>
+            <div class="card-screenshot">
+              <img src="assets/hospitalityuiscreenshotclean.png" alt="Hospitality platform admin interface" width="1449" height="1077" loading="lazy" decoding="async"
+                onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Platform Screenshot</span></div>'" />
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-num">01</span>
+            <span class="card-tag"><i data-lucide="briefcase" width="12" height="12"></i> Client Project — Ireland</span>
+            <h3 class="card-title">Multi-Tenant Hospitality Operations Platform</h3>
+            <p class="card-desc">Built a comprehensive platform (~30k LOC) handling WhatsApp/Telegram AI, bookings, staff management, and pricing intelligence across multiple locations. Includes hybrid NLP engine with 30+ intents, automated reservation lifecycle, and GDPR-compliant data handling.</p>
+            <p class="card-outcome">Bookings, support, and day-to-day ops go through WhatsApp and Telegram instead of phone tag, across multiple locations.</p>
+            <p class="card-notice"><i data-lucide="info" width="13" height="13"></i> Confidential client project. Screenshots for presentation only.</p>
+          </div>
+        </div>
+
+        <div class="work-row">
+
+          <div class="work-card">
+            <div class="card-media">
+              <div class="card-titlebar">
+                <div class="titlebar-dots">
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                </div>
+                <div class="titlebar-url">
+                  <i data-lucide="lock" width="10" height="10"></i>
+                  <span class="titlebar-url-text">Invoice Intelligence</span>
+                </div>
+              </div>
+              <div class="card-screenshot">
+                <img src="assets/invoicescreenshotclean.png" alt="Invoice monitoring dashboard" width="1145" height="1080" loading="lazy" decoding="async"
+                  onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Invoice System</span></div>'" />
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-num">02</span>
+              <span class="card-tag"><i data-lucide="briefcase" width="12" height="12"></i> Client Project — Ireland</span>
+              <h3 class="card-title">Automated Invoice Monitoring</h3>
+              <p class="card-desc">IMAP-based email ingestion, multi-stage PDF extraction, cross-supplier product normalization, and price history tracking. Threshold-based alerts for unit price changes.</p>
+              <p class="card-outcome">Supplier price changes show up as alerts, without anyone opening PDFs by hand.</p>
+              <p class="card-notice"><i data-lucide="info" width="13" height="13"></i> Confidential client project. Screenshots for presentation only.</p>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="card-media">
+              <div class="card-titlebar">
+                <div class="titlebar-dots">
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                  <div class="titlebar-dot"></div>
+                </div>
+                <div class="titlebar-url">
+                  <i data-lucide="globe" width="10" height="10"></i>
+                  <span class="titlebar-url-text">Typersian</span>
+                </div>
+              </div>
+              <div class="card-screenshot" style="background-color: #2d2d2d;">
+                <img src="assets/typersianlogoclean.png" alt="Typersian" width="569" height="569" loading="lazy" decoding="async"
+                  onerror="this.parentElement.innerHTML='<div class=\'card-screenshot-placeholder\'><span>Typersian</span></div>'" />
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-num">03</span>
+              <span class="card-tag"><i data-lucide="code" width="12" height="12"></i> Open Source</span>
+              <h3 class="card-title">Typersian</h3>
+              <p class="card-desc">System-wide Finglish to Persian converter using OS-level keyboard hooking and AI-powered word selection. First of its kind for Persian input.</p>
+              <p class="card-outcome">Type Persian in Finglish, system-wide, in every app, in real time.</p>
+              <a class="card-link github" href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
-      <a href="/research.html" class="btn btn-secondary">Research Interests</a>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="panel" id="contact">
+  <section class="newsletter" id="newsletter">
+    <h2 class="section-title">Newsletter</h2>
+    <p class="newsletter-intro">Leave your email and I'll let you know when there's something new.</p>
+    <form class="catch-form" data-catch-email novalidate>
+      <div class="catch-row">
+        <input class="catch-input" id="home-email" type="email" name="email" autocomplete="email" required placeholder="Email" aria-label="Email" />
+        <button class="btn btn-primary" type="submit">Notify me</button>
+      </div>
+      <p class="catch-status" data-catch-status role="status" aria-live="polite"></p>
+      <input class="catch-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    </form>
+    <p class="catch-note">I'll only use it to email you. <a class="grow-link" href="/privacy.html">Privacy</a></p>
+  </section>
+
+  <section class="follow" id="contact">
     <p class="section-label">Get in touch</p>
-    <p class="section-title">Let's work together</p>
-    <p class="contact-sub">Whether you need AI systems built or want to collaborate on research.</p>
-    <div class="email-choice">
-      <span class="email-address">radan@radanbahrami.com</span>
-      <div class="btn-row">
-        <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
-          <span class="copy-swap" aria-hidden="true">
-            <span class="copy-swap-idle"><i data-lucide="copy" width="16" height="16"></i></span>
-            <span class="copy-swap-done"><i data-lucide="check" width="16" height="16"></i></span>
-          </span>
-          <span class="copy-label">Copy email</span>
-        </button>
-        <a class="btn btn-primary" href="mailto:radan@radanbahrami.com">Open mail</a>
-      </div>
-    </div>
-    <div class="socials">
+    <div class="follow-line">
+      <a class="social-link" href="mailto:radan@radanbahrami.com"><i data-lucide="mail" width="18" height="18" aria-hidden="true"></i>radan@radanbahrami.com</a>
       <a class="social-link" href="https://github.com/radanbahrami" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
@@ -365,17 +327,20 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script></p>
     <div class="footer-links">
+      <a href="/blog.html">Writing</a>
       <a href="/work.html">Work</a>
-      <a href="/research.html">Research</a>
       <a href="/about.html">About</a>
-      <a href="#contact">Contact</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/cookies.html">Cookies</a>
     </div>
   </footer>
 
+  <script src="/assets/posts.js"></script>
   <script src="/assets/site.js"></script>
+  <script type="module" src="/assets/icons.js"></script>
 </body>
 </html>

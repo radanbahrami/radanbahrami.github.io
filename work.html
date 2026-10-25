@@ -4,21 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work | Radan Bahrami</title>
-  <meta name="description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta name="description" content="Production AI systems: conversational booking agents, invoice intelligence, and custom backend integrations." />
   <meta property="og:title" content="Work | Radan Bahrami" />
-  <meta property="og:description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta property="og:description" content="Production AI systems: conversational booking agents, invoice intelligence, and custom backend integrations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://radanbahrami.com/work.html" />
   <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <meta property="og:image:alt" content="Radan Bahrami" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Work | Radan Bahrami" />
-  <meta name="twitter:description" content="Production AI systems for ecommerce: conversational booking agents, invoice intelligence, and custom backend integrations." />
+  <meta name="twitter:description" content="Production AI systems: conversational booking agents, invoice intelligence, and custom backend integrations." />
   <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/whitelogoclean.png" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
@@ -91,202 +90,8 @@
       background: var(--ink);
     }
 
-    .work-section {
-      padding: 80px 40px;
-      background: var(--surface);
-    }
-
-    .work-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .work-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 48px;
-      margin-top: 48px;
-    }
-
-    .work-card {
-      background: transparent;
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .card-media {
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      background: var(--white);
-      border-radius: 12px;
-    }
-
-    .card-titlebar {
-      background: var(--white);
-      border-bottom: 1px solid var(--line);
-      padding: 10px 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-    }
-
-    .titlebar-dots {
-      display: flex;
-      gap: 6px;
-    }
-
-    .titlebar-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--line);
-    }
-
-    .titlebar-url {
-      flex: 1;
-      height: 22px;
-      background: var(--surface);
-      border-radius: 4px;
-      max-width: 180px;
-      display: flex;
-      align-items: center;
-      padding: 0 10px;
-      gap: 5px;
-    }
-
-    .titlebar-url svg { flex-shrink: 0; color: var(--muted); }
-
-    .titlebar-url-text {
-      font-size: 10px;
-      color: var(--muted);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .card-screenshot {
-      flex: 1;
-      overflow: hidden;
-      position: relative;
-      aspect-ratio: 4 / 3;
-    }
-
-    .card-screenshot img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-      display: block;
-    }
-
-    .card-screenshot-placeholder {
-      width: 100%;
-      height: 100%;
-      min-height: 220px;
-      background: var(--surface);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .card-body {
-      padding: 8px 0 8px 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      justify-content: center;
-    }
-
-    .card-num {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--muted);
-      line-height: 1;
-    }
-
-    .card-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--muted);
-    }
-
-    .card-title {
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: 0;
-      color: var(--ink);
-      line-height: 1.3;
-    }
-
-    .card-desc {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .card-outcome {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--ink);
-      line-height: 1.6;
-    }
-
-    .card-notice {
-      font-size: 12px;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .card-notice svg { flex-shrink: 0; }
-
-    .card-links {
-      display: flex;
-      gap: 16px;
-      margin-top: 4px;
-    }
-
-    .work-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-    }
-
-    .work-row .work-card {
-      grid-template-columns: 1fr;
-    }
-
-    .work-row .work-card .card-body {
-      padding: 24px 0 0;
-    }
-
-    .work-row .work-card .card-screenshot {
-      aspect-ratio: 1 / 1;
-    }
-
     @media (max-width: 768px) {
-      .services-section,
-      .work-section { padding: 64px 20px; }
-
-      .work-card,
-      .work-row { grid-template-columns: 1fr; }
-
-      .work-card .card-body {
-        padding: 24px 0 0;
-      }
-
+      .services-section { padding: 64px 20px; }
       .services-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -298,8 +103,8 @@
       <span class="wordmark">Radan Bahrami</span>
     </a>
     <ul class="nav-links">
+      <li><a href="/blog.html">Writing</a></li>
       <li><a class="active" href="/work.html">Work</a></li>
-      <li><a href="/research.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
@@ -313,17 +118,17 @@
   </nav>
 
   <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/blog.html">Writing</a>
     <a href="/work.html">Work</a>
-    <a href="/research.html">Research</a>
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact</a>
   </div>
 
   <div class="page-header">
     <p class="page-eyebrow">For Businesses</p>
-    <h1 class="page-title">AI Systems for Ecommerce</h1>
+    <h1 class="page-title">Production AI Systems</h1>
     <p class="page-subtitle">
-      I build production-ready AI systems that solve real ecommerce problems: intelligent booking agents, automated customer support, price monitoring, and custom backend integrations.
+      I build production-ready AI systems that solve real business problems: intelligent booking agents, automated customer support, price monitoring, and custom backend integrations.
     </p>
   </div>
 
@@ -479,10 +284,10 @@
 
         <div class="service-card">
           <div class="service-icon">
-            <i data-lucide="shopping-cart" width="22" height="22"></i>
+            <i data-lucide="layers" width="22" height="22"></i>
           </div>
-          <h3 class="service-title">Ecommerce Solutions</h3>
-          <p class="service-desc">Custom tools tailored specifically for online retail and ecommerce operations.</p>
+          <h3 class="service-title">Custom Solutions</h3>
+          <p class="service-desc">Tools built around your workflows, data, and day-to-day operations.</p>
           <ul class="service-list">
             <li>Customer support automation</li>
             <li>Order management systems</li>
@@ -528,7 +333,7 @@
       Need a custom AI system? Let's talk about your project.
     </p>
     <div class="email-choice">
-      <span class="email-address">radan@radanbahrami.com</span>
+      <span class="email-address"><i data-lucide="mail" aria-hidden="true"></i>radan@radanbahrami.com</span>
       <div class="btn-row">
         <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
           <span class="copy-swap" aria-hidden="true">
@@ -545,13 +350,17 @@
   <footer>
     <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Radan Bahrami</p>
     <div class="footer-links">
+      <a href="/blog.html">Writing</a>
       <a href="/work.html">Work</a>
-      <a href="/research.html">Research</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/cookies.html">Cookies</a>
     </div>
   </footer>
 
+  <script src="/assets/posts.js"></script>
   <script src="/assets/site.js"></script>
+  <script type="module" src="/assets/icons.js"></script>
 </body>
 </html>

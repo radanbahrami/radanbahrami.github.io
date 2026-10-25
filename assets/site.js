@@ -56,10 +56,120 @@
     copyEmail(button.getAttribute('data-copy-email'), button);
   });
 
-  if (typeof lucide !== 'undefined') {
-    lucide.createIcons();
-    prepCheckPaths();
+  document.addEventListener('submit', function (event) {
+    var form = event.target.closest('[data-catch-email]');
+    if (!form) return;
+    event.preventDefault();
+
+    var input = form.querySelector('input[type="email"]');
+    var status = form.querySelector('[data-catch-status]');
+    var button = form.querySelector('button[type="submit"]');
+    var honey = form.querySelector('.catch-honey');
+    var email = input ? input.value.trim() : '';
+
+    function setStatus(message, isError) {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.toggle('is-error', !!isError);
+    }
+
+    if (honey && honey.value) return;
+    if (!input || !input.checkValidity()) {
+      setStatus('Enter an email.', true);
+      if (input) input.focus();
+      return;
+    }
+
+    if (button) button.disabled = true;
+    setStatus('', false);
+
+    fetch('https://formsubmit.co/ajax/radan@radanbahrami.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        email: email,
+        _subject: 'Newsletter signup from radanbahrami.com',
+        _template: 'table',
+        _captcha: 'false'
+      })
+    }).then(function (response) {
+      if (!response.ok) throw new Error('Request failed');
+      return response.json();
+    }).then(function () {
+      form.reset();
+      setStatus("You're on the list.", false);
+    }).catch(function () {
+      setStatus("Couldn't send that. Try again.", true);
+    }).then(function () {
+      if (button) button.disabled = false;
+    });
+  });
+
+  window.prepCheckPaths = prepCheckPaths;
+
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, function (char) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char];
+    });
   }
+
+  function safeUrl(url) {
+    var value = String(url || '').trim();
+    if (value.charAt(0) === '/') return value;
+    if (/^https?:\/\//i.test(value)) return value;
+    return '';
+  }
+
+  function formatPostDate(iso) {
+    var match = /^(\d{4})-(\d{2})(?:-\d{2})?$/.exec(String(iso).trim());
+    if (!match) return String(iso);
+    var names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var month = names[Number(match[2]) - 1];
+    return month ? month + ' ' + match[1] : String(iso);
+  }
+
+  function renderWritingLists() {
+    var posts = Array.isArray(window.SITE_POSTS) ? window.SITE_POSTS.slice() : [];
+    posts = posts.filter(function (post) {
+      return post && post.title && post.date && post.sentence && safeUrl(post.url);
+    });
+    posts.sort(function (a, b) {
+      if (a.date === b.date) return 0;
+      return a.date < b.date ? 1 : -1;
+    });
+
+    document.querySelectorAll('[data-writing-list]').forEach(function (list) {
+      var limit = Number(list.getAttribute('data-writing-limit'));
+      var visible = limit > 0 ? posts.slice(0, limit) : posts;
+      var empty = list.parentElement ? list.parentElement.querySelector('[data-writing-empty]') : null;
+
+      if (!visible.length) {
+        list.hidden = true;
+        list.innerHTML = '';
+        if (empty) empty.hidden = false;
+        return;
+      }
+
+      list.hidden = false;
+      if (empty) empty.hidden = true;
+      list.innerHTML = visible.map(function (post) {
+        return '' +
+          '<a class="blog-post-item" href="' + escapeHTML(safeUrl(post.url)) + '">' +
+            '<div>' +
+              '<p class="post-title">' + escapeHTML(post.title) + '</p>' +
+              '<p class="post-excerpt">' + escapeHTML(post.sentence) + '</p>' +
+            '</div>' +
+            '<span class="post-date">' + escapeHTML(formatPostDate(post.date)) + '</span>' +
+          '</a>';
+      }).join('');
+    });
+  }
+
+  window.renderWritingLists = renderWritingLists;
+  renderWritingLists();
 
   var menu = document.getElementById('mobileNav');
   var hamburger = document.getElementById('navHamburger');

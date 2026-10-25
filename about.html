@@ -4,22 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Radan Bahrami</title>
-  <meta name="description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta name="description" content="CS student and freelance AI engineer. I build production AI systems for businesses." />
   <meta property="og:title" content="About | Radan Bahrami" />
-  <meta property="og:description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta property="og:description" content="CS student and freelance AI engineer. I build production AI systems for businesses." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://radanbahrami.com/about.html" />
   <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <meta property="og:image:alt" content="Radan Bahrami" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="About | Radan Bahrami" />
-  <meta name="twitter:description" content="CS student and freelance AI engineer. I build production AI systems for ecommerce and look for NLP and LLM research collaborations." />
+  <meta name="twitter:description" content="CS student and freelance AI engineer. I build production AI systems for businesses." />
   <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <link rel="icon" href="assets/whitelogoclean.png" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
@@ -76,6 +75,14 @@
       margin: 8px 0 32px;
     }
 
+    .page-wrap .email-choice .btn-secondary {
+      background: var(--surface);
+    }
+
+    .page-wrap .email-choice .btn-secondary:hover {
+      background: var(--line);
+    }
+
     .back-link:focus-visible {
       outline: none;
       box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
@@ -90,8 +97,8 @@
       <span class="wordmark">Radan Bahrami</span>
     </a>
     <ul class="nav-links">
+      <li><a href="/blog.html">Writing</a></li>
       <li><a href="/work.html">Work</a></li>
-      <li><a href="/research.html">Research</a></li>
       <li><a href="/about.html" class="active">About</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
@@ -105,8 +112,8 @@
   </nav>
 
   <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/blog.html">Writing</a>
     <a href="/work.html">Work</a>
-    <a href="/research.html">Research</a>
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact</a>
   </div>
@@ -117,24 +124,22 @@
       Back
     </a>
     <p class="page-eyebrow">About me</p>
-    <h1 class="page-title">AI Engineer & Researcher</h1>
+    <h1 class="page-title">Hello, I'm Radan</h1>
     <div class="page-body">
       <p>I'm a CS student who spent a year and a half studying mechanical engineering before changing course to follow what I was actually built for.</p>
 
       <p>I got into software because it felt like magic. The idea that you can think of something and make it real. That feeling hasn't gone away.</p>
 
-      <p><strong>I build AI systems for ecommerce companies.</strong> I'm a freelance AI Engineer with 2+ years of experience building production systems. I specialize in conversational AI, intelligent automation, and custom backend integrations: the kind of tools that don't exist yet but solve real business problems.</p>
+      <p>I'm a freelance AI Engineer with 2+ years of experience building production systems. I specialize in conversational AI, intelligent automation, and custom backend integrations: the kind of tools that don't exist yet but solve real business problems.</p>
 
       <p>Most recently I built a multi-tenant AI platform for Irish hospitality businesses: WhatsApp and Telegram bots handling bookings, customer support, staff management, and operations through natural language. ~30k lines of Python, hybrid NLP + LLM pipelines, GDPR-compliant data handling. A real client, a real problem, a real solution.</p>
 
-      <p><strong>I'm interested in NLP and LLM research.</strong> My production experience with language models and conversational AI sparked deeper curiosity about how these systems work. I'm looking to collaborate with professors and PhD students on research projects where I can contribute my engineering skills and learn from the academic side.</p>
-
       <p><a class="grow-link text-link" href="https://github.com/radanbahrami/typersian" target="_blank" rel="noopener">Typersian</a> started with my own frustration. I grew up more comfortable typing in Latin script than Persian, which made writing in Persian slower and more painful than it needed to be. No existing tool solved it the way I needed: system-wide, across every app, in real time. So I built it myself. It became the world's first system-wide Finglish to Persian converter, used by many people.</p>
 
-      <p>Whether you need AI systems built or want to collaborate on research, let's talk.</p>
+      <p>If you need AI systems built, let's talk.</p>
 
       <div class="email-choice align-start">
-        <span class="email-address">radan@radanbahrami.com</span>
+        <span class="email-address"><i data-lucide="mail" aria-hidden="true"></i>radan@radanbahrami.com</span>
         <div class="btn-row">
           <button type="button" class="btn btn-secondary" data-copy-email="radan@radanbahrami.com" aria-label="Copy email">
           <span class="copy-swap" aria-hidden="true">
@@ -154,13 +159,17 @@
   <footer>
     <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script></p>
     <div class="footer-links">
+      <a href="/blog.html">Writing</a>
       <a href="/work.html">Work</a>
-      <a href="/research.html">Research</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/cookies.html">Cookies</a>
     </div>
   </footer>
 
+  <script src="/assets/posts.js"></script>
   <script src="/assets/site.js"></script>
+  <script type="module" src="/assets/icons.js"></script>
 </body>
 </html>

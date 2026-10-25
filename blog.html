@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Radan Bahrami</title>
+  <title>Writing | Radan Bahrami</title>
   <meta name="description" content="Thoughts on AI, automation, and building things." />
-  <meta property="og:title" content="Blog | Radan Bahrami" />
+  <meta property="og:title" content="Writing | Radan Bahrami" />
   <meta property="og:description" content="Thoughts on AI, automation, and building things." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://radanbahrami.com/blog.html" />
   <meta property="og:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <meta property="og:image:alt" content="Radan Bahrami" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Blog | Radan Bahrami" />
+  <meta name="twitter:title" content="Writing | Radan Bahrami" />
   <meta name="twitter:description" content="Thoughts on AI, automation, and building things." />
   <meta name="twitter:image" content="https://radanbahrami.com/assets/headshotclean.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/whitelogoclean.png" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
@@ -51,49 +50,11 @@
       margin: 0 0 72px;
     }
 
-    .blog-empty {
-      border-top: 1px solid var(--line);
-      padding: 64px 0;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
+    .back-link:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--accent);
+      border-radius: 4px;
     }
-
-    .blog-empty-icon { color: var(--muted); }
-
-    .blog-empty h2 {
-      font-size: 18px;
-      font-weight: 500;
-      color: var(--ink);
-    }
-
-    .blog-empty p {
-      font-size: 15px;
-      font-weight: 400;
-      color: var(--muted);
-      max-width: 400px;
-      line-height: 1.6;
-    }
-
-    .blog-list { display: flex; flex-direction: column; gap: 0; }
-    .blog-post-item {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 24px;
-      padding: 28px 0;
-      border-bottom: 1px solid var(--line);
-      text-decoration: none;
-      color: inherit;
-      transition: opacity 0.33s;
-    }
-    .blog-post-item:hover { opacity: 0.6; }
-    .blog-post-item:first-child { border-top: 1px solid var(--line); }
-    .post-title { font-size: 18px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
-    .post-excerpt { font-size: 14px; font-weight: 400; color: var(--muted); line-height: 1.6; }
-    .post-date { font-size: 13px; color: var(--muted); white-space: nowrap; flex-shrink: 0; padding-top: 3px; }
   </style>
 </head>
 <body class="page-inner">
@@ -103,8 +64,8 @@
       <span class="wordmark">Radan Bahrami</span>
     </a>
     <ul class="nav-links">
+      <li><a href="/blog.html" class="active">Writing</a></li>
       <li><a href="/work.html">Work</a></li>
-      <li><a href="/research.html">Research</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
@@ -118,8 +79,8 @@
   </nav>
 
   <div class="nav-mobile-overlay" id="mobileNav" inert>
+    <a href="/blog.html">Writing</a>
     <a href="/work.html">Work</a>
-    <a href="/research.html">Research</a>
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact</a>
   </div>
@@ -129,10 +90,12 @@
       <i data-lucide="arrow-left" width="14" height="14"></i>
       Back
     </a>
-    <h1 class="page-title">Blog</h1>
+    <h1 class="page-title">Writing</h1>
     <p class="page-subtitle">Thoughts on AI, automation, and building things.</p>
 
-    <div class="blog-empty" id="emptyState">
+    <div class="blog-list" data-writing-list hidden></div>
+
+    <div class="blog-empty" data-writing-empty>
       <div class="blog-empty-icon">
         <i data-lucide="pencil-line" width="28" height="28"></i>
       </div>
@@ -140,29 +103,35 @@
       <p>I'll be sharing thoughts on AI, building software, and lessons from freelancing. Check back soon.</p>
     </div>
 
-    <div class="blog-list" id="blogList" style="display:none;">
-      <!-- Posts will go here. Example structure:
-      <a class="blog-post-item" href="/blog/post-slug.html">
-        <div>
-          <p class="post-title">Title goes here</p>
-          <p class="post-excerpt">Short excerpt or description.</p>
+    <section class="newsletter newsletter-inline">
+      <h2 class="section-title">Newsletter</h2>
+      <p class="newsletter-intro">Leave your email and I'll let you know when there's something new.</p>
+      <form class="catch-form" data-catch-email novalidate>
+        <div class="catch-row">
+          <input class="catch-input" id="writing-email" type="email" name="email" autocomplete="email" required placeholder="Email" aria-label="Email" />
+          <button class="btn btn-primary" type="submit">Notify me</button>
         </div>
-        <span class="post-date">May 2026</span>
-      </a>
-      -->
-    </div>
+        <p class="catch-status" data-catch-status role="status" aria-live="polite"></p>
+        <input class="catch-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      </form>
+      <p class="catch-note">I'll only use it to email you. <a class="grow-link" href="/privacy.html">Privacy</a></p>
+    </section>
   </div>
 
   <footer>
     <p class="footer-copy">© <script>document.write(new Date().getFullYear())</script></p>
     <div class="footer-links">
+      <a href="/blog.html">Writing</a>
       <a href="/work.html">Work</a>
-      <a href="/research.html">Research</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/cookies.html">Cookies</a>
     </div>
   </footer>
 
+  <script src="/assets/posts.js"></script>
   <script src="/assets/site.js"></script>
+  <script type="module" src="/assets/icons.js"></script>
 </body>
 </html>
